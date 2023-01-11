@@ -1,0 +1,24 @@
+
+header{text-align: center; 
+background-color: rgb(148, 201, 148);}
+body{background-color: black;}
+li {color: lightgreen;}
+
+
+h3 {color: orange;}
+p {color: lightgreen;}
+
+/* id selector */
+#image1 {width: 200px;
+length: 500px}
+#image2 {width: 200px;
+length: 500px}
+#image3 {width: 250px;
+length:500px}
+#Competitors {text-align: center;
+color: blueviolet;}
+#section1 {}
+#p1 {color: lightgreen;}
+
+iframe {display:block; width: 560px; height: 315px; margin-left:auto; margin-right:auto ;
+}
