@@ -24,52 +24,107 @@
         document.write("Welcome to the Turtle Races!");</script> -->
         <p id="p1">
         <h1>
-            <script> let username = prompt("Identify yourself!")
-            console.log(username)
-            if (username == false) {prompt ("Time is running out, reveal yourself")};
-            else if{username == true} :prompt ("Welcome to the Turtle Races!" + username +"!") </script>
-             </h1>
+            <script> let username = prompt("Identify yourself!");
+
+                console.log("username", username);
+                if (!username) {
+                    console.log("We are in the if statement")
+                    username = prompt("You are running out of time, reveal yourself" + "!");
+
+                }
+                if (!username) {
+                    console.log("we are in the second if statement")
+                    alert("GO AWAY" + "!")
+                }
+                else {
+                    document.write("Welcome to the Turtle Races " + username + "!");
+                }
+            </script>
+        </h1>
         </p>
         <p>
         <h1 id="Competitors"> Competitors</h3>
+            <p id="p2">
+                <script> document.write("Which Turtle will win?") </script>
+            </p>
             </p>
             <ol>
                 <section id="section1">
                     <li>
-                        <p>Snapper</p>
+                        <p>Snapper <button id="button1">Try it</button>
+                            <script>
+
+                                function button1Function() {
+                                    alert("You Lost!");
+                                }
+
+                                let button1 = document.getElementById("button1");
+                                button1.addEventListener("click", button1Function);
+
+                            </script>
+                        </p>
                         <img id="image1" src="img/turtle 1.jpg" alt="Picture of Snapper" />
                     </li>
                     <li>
-                        <p>Conshelles</p>
+                        <p>Conshelles <button id="button2">Try it</button>
+                            <script>
+                                function button2Function() {
+                                    alert("You Lost!");
+                                }
+                                let button2 = document.getElementById("button2");
+                                button2.addEventListener("click", button2Function);
+
+                            </script>
+                        </p>
                         <img id="image2" src="img/Turtle 2.jpg" alt="Picture of Speedy Conshelles" />
                     </li>
                     <li>
-                        <p>Gus</p>
+                        <p>Gus <button id="button3">Try it</button>
+                            <script>
+                                function button3Function() {
+                                    alert("You Won WOOOOO!");
+                                }
+                                let button3 = document.getElementById("button3");
+                                button3.addEventListener("click", button3Function);
+
+                            </script>
+                        </p>
                         <img id="image3" src="img/Turtle 3.jpg" alt="Picture of Gus" />
                     </li>
+                    <!-- <script>
+                        function myFunction() {
+                          var x = document.createElement("BUTTON");
+                          var t = document.createTextNode("WINNER!!!!!");
+                          x.appendChild(t);
+                          document.body.appendChild(x);
+                        }
+                        </script> -->
                 </section>
                 <section id="section2">
-                    
-                
-                    
+
+
+
                     <ol>
                         <h1>Race Locations</h1>
                         <li>Tampa</li>
                         <li>Honolulu</li>
                         <li>Miami</li>
                     </ol>
-                    
-                    
+
+
                     <ol>
                         <h1>Race Dates</h1>
-                    <li>January 20th</li>
-                    <li>Febuary 15th</li>
-                    <Li>March 3rd</Li>
+                        <li>January 20th</li>
+                        <li>Febuary 15th</li>
+                        <Li>March 3rd</Li>
                     </ol>
                 </section>
 
     </main>
-    <footer> &copy Speedy Turtle Racing INC</footer>
+    <footer> &copy Speedy Turtle Racing INC <button onclick="myFunction()">Don't Push</button>
+        <script>
+        </script>
+    </footer>
 </body>
 
 </html>

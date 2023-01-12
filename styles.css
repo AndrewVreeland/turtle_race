@@ -65,6 +65,8 @@ p {
 #p1 {
     color: orange;
 }
+#p2 { color: gold;
+text-align: center;}
 
 #title {
     color: black;
