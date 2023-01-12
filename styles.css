@@ -30,7 +30,9 @@ p {
 /* id selector */
 #image1 {
     width: 200px;
-    length: 500px
+    length: 500px;
+    
+    
 }
 
 #image2 {
