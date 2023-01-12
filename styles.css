@@ -45,7 +45,7 @@ p {
 
 #Competitors {
     text-align: center;
-    color: orange;
+    color: rgb(99, 204, 38);
 }
 
 #section1 {
@@ -67,7 +67,7 @@ p {
 }
 
 #title {
-    color: gray;
+    color: black;
 }
 
 iframe {
