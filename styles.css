@@ -45,6 +45,11 @@ p {
     length: 500px
 }
 
+#image4 {
+    width:90px;
+    length:50px
+}
+
 #Competitors {
     text-align: center;
     color: (color orange);

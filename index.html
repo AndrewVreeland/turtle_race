@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <title>Turtle Race</title>
     <link rel="stylesheet" href="styles.css">
+    <script src='script.js'> </script>
 </head>
 
 <body>
@@ -16,89 +18,46 @@
         </nav>
     </header>
     <main>
-
+        
+        
         <iframe src="https://www.youtube.com/embed/tDF_UJB0SWo" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        <!-- <script> let username = prompt("Identify yourself!")
-        document.write("Welcome to the Turtle Races!");</script> -->
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+        
         <p id="p1">
-        <h1>
-            <script> let username = prompt("Identify yourself!");
+            <h1>
+                
 
-                console.log("username", username);
-                if (!username) {
-                    console.log("We are in the if statement")
-                    username = prompt("You are running out of time, reveal yourself" + "!");
-
-                }
-                if (!username) {
-                    console.log("we are in the second if statement")
-                    alert("GO AWAY" + "!")
-                }
-                else {
-                    document.write("Welcome to the Turtle Races " + username + "!");
-                }
-            </script>
         </h1>
         </p>
         <p>
-        <h1 id="Competitors"> Competitors</h3>
+        <h1 id="Competitors">  <script>username(); whoWillWin()</script> </h3>
+            <h3>  </h3>
             <p id="p2">
-                <script> document.write("Which Turtle will win?") </script>
+                
             </p>
             </p>
             <ol>
                 <section id="section1">
                     <li>
-                        <p>Snapper <button id="button1">Try it</button>
-                            <script>
-
-                                function button1Function() {
-                                    alert("You Lost!");
-                                }
-
-                                let button1 = document.getElementById("button1");
-                                button1.addEventListener("click", button1Function);
-
-                            </script>
+                        <p>Snapper  <button onclick='button1Function()' id="button1"> Try it <script>button1Function()</script> </button>
+                            
                         </p>
                         <img id="image1" src="img/turtle 1.jpg" alt="Picture of Snapper" />
                     </li>
                     <li>
-                        <p>Conshelles <button id="button2">Try it</button>
-                            <script>
-                                function button2Function() {
-                                    alert("You Lost!");
-                                }
-                                let button2 = document.getElementById("button2");
-                                button2.addEventListener("click", button2Function);
-
-                            </script>
+                        <p>Conshelles <button onclick='button2Function()' id="button2">>Try it <script>button2Function()</script> </button>
+                            
                         </p>
                         <img id="image2" src="img/Turtle 2.jpg" alt="Picture of Speedy Conshelles" />
                     </li>
                     <li>
-                        <p>Gus <button id="button3">Try it</button>
-                            <script>
-                                function button3Function() {
-                                    alert("You Won WOOOOO!");
-                                }
-                                let button3 = document.getElementById("button3");
-                                button3.addEventListener("click", button3Function);
-
-                            </script>
+                        <p>Gus <button onclick='button3Function()' id="button3">Try it <script>button3Function()</script></button>
+                            
                         </p>
                         <img id="image3" src="img/Turtle 3.jpg" alt="Picture of Gus" />
                     </li>
-                    <!-- <script>
-                        function myFunction() {
-                          var x = document.createElement("BUTTON");
-                          var t = document.createTextNode("WINNER!!!!!");
-                          x.appendChild(t);
-                          document.body.appendChild(x);
-                        }
-                        </script> -->
+                
                 </section>
                 <section id="section2">
 
@@ -110,8 +69,10 @@
                         <li>Honolulu</li>
                         <li>Miami</li>
                     </ol>
-
-
+                    <script>
+                        repeatImage();
+                    </script>
+                    <!-- <img id="image4" src="img/Turtle4.gif" alt="Turtle Gif"/> -->
                     <ol>
                         <h1>Race Dates</h1>
                         <li>January 20th</li>
@@ -121,9 +82,8 @@
                 </section>
 
     </main>
-    <footer> &copy Speedy Turtle Racing INC <button onclick="myFunction()">Don't Push</button>
-        <script>
-        </script>
+    <footer> &copy Speedy Turtle Racing INC <button onclick="myFunction">Don't Push</button>
+        
     </footer>
 </body>
 
